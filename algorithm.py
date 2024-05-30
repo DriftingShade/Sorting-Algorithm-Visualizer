@@ -14,6 +14,8 @@ class DrawInformation:
 
     GRADIENTS = [(128, 128, 128), (160, 160, 160), (192, 192, 192)]
 
+    FONT = pygame.font.SysFont('comicsans', 30)
+    LARGE_FONT = pygame.font.SysFont('comicsans', 40)
     SIDE_PAD = 100
     TOP_PAD = 150
 
@@ -77,6 +79,8 @@ def main():
 
     lst = generate_starting_list(n, min_val, max_val)
     draw_info = DrawInformation(800, 600, lst)
+    sorting = False
+    ascending = True
 
     while run:
         clock.tick(60)
@@ -92,6 +96,14 @@ def main():
             if event.key == pygame.K_r:
                 lst = generate_starting_list(n, min_val, max_val)
                 draw_info.set_list(lst)
+                sorting = False
+            
+            elif event.key == pygame.K_SPACE and sorting == False:
+                sorting = True
+            elif event.key == pygame.K_a and not sorting:
+                ascending = True
+            elif event.key == pygame.K_d and not sorting:
+                ascending = False
 
     pygame.quit()
 
