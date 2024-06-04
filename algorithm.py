@@ -17,8 +17,6 @@ class DrawInformation:
     FONT = pygame.font.SysFont("comicsans", 20)
     LARGE_FONT = pygame.font.SysFont("comicsans", 30)
 
-    FONT = pygame.font.SysFont("comicsans", 30)
-    LARGE_FONT = pygame.font.SysFont("comicsans", 40)
     SIDE_PAD = 100
     TOP_PAD = 150
 
