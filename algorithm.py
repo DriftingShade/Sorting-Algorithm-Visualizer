@@ -14,8 +14,8 @@ class DrawInformation:
 
     GRADIENTS = [(128, 128, 128), (160, 160, 160), (192, 192, 192)]
 
-    FONT = pygame.font.SysFont("comicsans", 20)
-    LARGE_FONT = pygame.font.SysFont("comicsans", 30)
+    FONT = pygame.font.SysFont("arial", 20)
+    LARGE_FONT = pygame.font.SysFont("arial", 30)
 
     SIDE_PAD = 100
     TOP_PAD = 150
